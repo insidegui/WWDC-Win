@@ -1,0 +1,6 @@
+MainPackage=C:\Users\insid\Documents\Visual Studio 2015\Projects\WWDC\WWDC\bin\x64\Release\WWDC_1.0.4.0_x64.appx
+SymbolPackage=C:\Users\insid\Documents\Visual Studio 2015\Projects\WWDC\WWDC\AppPackages\WWDC_1.0.4.0_Test\WWDC_1.0.4.0_x64.appxsym
+ResourcePack=C:\Users\insid\Documents\Visual Studio 2015\Projects\WWDC\WWDC\bin\x64\Release\WWDC_1.0.4.0_scale-100.appx
+ResourcePack=C:\Users\insid\Documents\Visual Studio 2015\Projects\WWDC\WWDC\bin\x64\Release\WWDC_1.0.4.0_scale-125.appx
+ResourcePack=C:\Users\insid\Documents\Visual Studio 2015\Projects\WWDC\WWDC\bin\x64\Release\WWDC_1.0.4.0_scale-150.appx
+ResourcePack=C:\Users\insid\Documents\Visual Studio 2015\Projects\WWDC\WWDC\bin\x64\Release\WWDC_1.0.4.0_scale-400.appx

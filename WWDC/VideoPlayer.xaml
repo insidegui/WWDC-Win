@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="WWDC.VideoPlayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WWDC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Foreground="White" RequestedTheme="Dark" PointerMoved="PointerDidMove">
+    <Page.TopAppBar>
+        <CommandBar Name="commandBar" ScrollViewer.VerticalScrollBarVisibility="Disabled" FlowDirection="RightToLeft" PointerMoved="PointerDidMove">
+            <AppBarButton Icon="Back" Label="Go Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="BackButtonClicked"/>
+        </CommandBar>
+    </Page.TopAppBar>
+
+    <Grid Background="Black">
+        <MediaElement x:Name="player" AudioCategory="Movie" AreTransportControlsEnabled="True" PointerMoved="PointerDidMove" MediaEnded="DidFinishPlayback" CurrentStateChanged="PlayerStateDidChange"/>
+    </Grid>
+</Page>

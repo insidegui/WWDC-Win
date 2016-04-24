@@ -1,0 +1,6 @@
+MainPackage=c:\users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\bin\ARM\Release\WWDC_1.0.3.0_ARM.appx
+SymbolPackage=c:\users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\AppPackages\WWDC_1.0.3.0_Test\WWDC_1.0.3.0_ARM.appxsym
+ResourcePack=c:\users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\bin\ARM\Release\WWDC_1.0.3.0_scale-100.appx
+ResourcePack=c:\users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\bin\ARM\Release\WWDC_1.0.3.0_scale-125.appx
+ResourcePack=c:\users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\bin\ARM\Release\WWDC_1.0.3.0_scale-150.appx
+ResourcePack=c:\users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\bin\ARM\Release\WWDC_1.0.3.0_scale-400.appx

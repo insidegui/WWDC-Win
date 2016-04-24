@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="WWDC.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WWDC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView DisplayMode="Inline" IsPaneOpen="True">
+            <SplitView.Pane>
+                <Grid>
+                    <ListView x:Name="sessionsListView" SelectionChanged="DidSelectSession"/>
+
+                </Grid>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid>
+                    <StackPanel Height="107" VerticalAlignment="Top" Margin="0,10,0,0">
+                        <TextBlock x:Name="selectedSessionTitleTextBlock" TextWrapping="NoWrap" Text="No session selected" FontSize="24" FontFamily="Segoe UI Light" Margin="10,10"/>
+                        <TextBlock x:Name="selectedSessionSummaryTextBlock" TextWrapping="NoWrap" Text="Select a session to see It here" Margin="10,0,10,10"/>
+                        <Border BorderBrush="LightGray" BorderThickness="0,0,0,1" Height="1" Margin="10,5,10,10"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,117,0,0">
+                        <TextBlock x:Name="selectedSessionDescriptionTextBlock" TextWrapping="Wrap" Text="" MaxHeight="300" Margin="10,0,10,20"/>
+                        <Button x:Name="watchVideoButton" Content="Watch Video" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" Background="#FF008BFF" Foreground="White" Click="watchVideoButton_Click"/>
+                        <Button x:Name="toggleFavoriteButton" Content="Add to Favorites" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,0" Background="#FF008BFF" Foreground="White" Click="toggleFavoriteButton_Click"/>
+                        <Button x:Name="toggleWatchedButton" Content="Mark as Watched" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,0" Background="#FF008BFF" Foreground="White" Click="toggleWatchedButton_Click"/>
+                    </StackPanel>
+
+                </Grid>
+            </SplitView.Content>
+        </SplitView>
+
+    </Grid>
+</Page>
