@@ -11,18 +11,26 @@
         <SplitView DisplayMode="Inline" IsPaneOpen="True">
             <SplitView.Pane>
                 <Grid>
-                    <ListView x:Name="sessionsListView" SelectionChanged="DidSelectSession"/>
-
+                    <ListView x:Name="sessionsListView" SelectionChanged="DidSelectSession" Background="White"/>
+                    <Border BorderBrush="LightGray" BorderThickness="0,0,1,0"/>
                 </Grid>
             </SplitView.Pane>
             <SplitView.Content>
                 <Grid>
-                    <StackPanel Height="107" VerticalAlignment="Top" Margin="0,10,0,0">
-                        <TextBlock x:Name="selectedSessionTitleTextBlock" TextWrapping="NoWrap" Text="No session selected" FontSize="24" FontFamily="Segoe UI Light" Margin="10,10"/>
-                        <TextBlock x:Name="selectedSessionSummaryTextBlock" TextWrapping="NoWrap" Text="Select a session to see It here" Margin="10,0,10,10"/>
+                    <StackPanel Height="67" VerticalAlignment="Top" Margin="0,10,0,0">
+                        <StackPanel Height="30" Orientation="Horizontal" Margin="10,0,10,0">
+                            <TextBlock x:Name="favoriteIcon" Text="★" FontSize="22" LineHeight="20" TextAlignment="Center" Margin="0,-3,6,0" Visibility="Collapsed"/>
+                            <TextBlock x:Name="selectedSessionTitleTextBlock" TextWrapping="NoWrap" Text="No session selected" FontSize="24" FontFamily="Segoe UI Light" FontWeight="Thin"/>   
+                        </StackPanel>
+                        
+                        <TextBlock x:Name="selectedSessionSummaryTextBlock" TextWrapping="NoWrap" Text="Select a session to see It here" Margin="10,0,10,10">
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="#99000000"/>
+                            </TextBlock.Foreground>
+                        </TextBlock>
                         <Border BorderBrush="LightGray" BorderThickness="0,0,0,1" Height="1" Margin="10,5,10,10"/>
                     </StackPanel>
-                    <StackPanel Margin="0,117,0,0">
+                    <StackPanel Margin="0,95,0,0">
                         <TextBlock x:Name="selectedSessionDescriptionTextBlock" TextWrapping="Wrap" Text="" MaxHeight="300" Margin="10,0,10,20"/>
                         <Button x:Name="watchVideoButton" Content="Watch Video" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" Background="#FF008BFF" Foreground="White" Click="watchVideoButton_Click"/>
                         <Button x:Name="toggleFavoriteButton" Content="Add to Favorites" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,0" Background="#FF008BFF" Foreground="White" Click="toggleFavoriteButton_Click"/>

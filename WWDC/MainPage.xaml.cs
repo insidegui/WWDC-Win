@@ -24,6 +24,7 @@ namespace WWDC
         {
             this.InitializeComponent();
 
+            ShowEmptyState();
             SessionManager.SharedInstance.LoadSessions(new SessionManager.DidLoadSessionsCallback(DidLoadSessions));
         }
 
@@ -65,6 +66,7 @@ namespace WWDC
 
         private void ShowEmptyState()
         {
+            favoriteIcon.Visibility = Visibility.Collapsed;
             selectedSessionDescriptionTextBlock.Text = "";
             selectedSessionTitleTextBlock.Text = "No session selected";
             selectedSessionSummaryTextBlock.Text = "Select a session to see It here.";
@@ -86,9 +88,11 @@ namespace WWDC
 
             if (SessionManager.SharedInstance.GetFavorite(session))
             {
+                favoriteIcon.Visibility = Visibility.Visible;
                 toggleFavoriteButton.Tag = true;
                 toggleFavoriteButton.Content = "Remove from Favorites";
             } else {
+                favoriteIcon.Visibility = Visibility.Collapsed;
                 toggleFavoriteButton.Tag = false;
                 toggleFavoriteButton.Content = "Add to Favorites";
             }
