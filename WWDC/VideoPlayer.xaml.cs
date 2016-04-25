@@ -117,6 +117,9 @@ namespace WWDC
             if (player.Position.TotalSeconds >= thresholdPosition)
             {
                 SessionManager.SharedInstance.SetWatched(session, true);
+            } else
+            {
+                SessionManager.SharedInstance.SetWatched(session, false);
             }
         }
 
