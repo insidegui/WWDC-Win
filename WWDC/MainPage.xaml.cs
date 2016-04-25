@@ -44,6 +44,9 @@ namespace WWDC
             }
 
             RestoreSelection();
+
+            progressIndicator.IsActive = false;
+            progressIndicator.Visibility = Visibility.Collapsed;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

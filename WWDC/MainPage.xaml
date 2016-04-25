@@ -11,6 +11,7 @@
         <SplitView DisplayMode="Inline" IsPaneOpen="True">
             <SplitView.Pane>
                 <Grid>
+                    <ProgressRing x:Name="progressIndicator" Height="42" Width="42" IsActive="True" Canvas.ZIndex="20"/>
                     <ListView x:Name="sessionsListView" SelectionChanged="DidSelectSession" Background="White"/>
                     <Border BorderBrush="LightGray" BorderThickness="0,0,1,0"/>
                 </Grid>
