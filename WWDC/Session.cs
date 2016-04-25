@@ -8,6 +8,14 @@ namespace WWDC
 {
     public sealed class Session
     {
+        public string uniqueIdentifier
+        {
+            get
+            {
+                return year + "-" + id;
+            }
+        }
+
         public int year = 0;
         public int id = -1;
         public string date = "";

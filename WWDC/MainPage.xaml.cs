@@ -42,9 +42,28 @@ namespace WWDC
             {
                 sessionsListView.Items.Add(session);
             }
+
+            RestoreSelection();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            RestoreSelection();
         }
 
         private Session selectedSession = null;
+
+        private void RestoreSelection()
+        {
+            var savedSelection = SessionManager.SharedInstance.GetSelectedSession();
+            if (savedSelection != null && SessionManager.SharedInstance.sessions.Count > 0)
+            {
+                ShowSession(savedSelection);
+                sessionsListView.SelectedItem = savedSelection;
+            }
+        }
 
         private void watchVideoButton_Click(object sender, RoutedEventArgs e)
         {
@@ -60,6 +79,7 @@ namespace WWDC
                 ShowEmptyState();
             } else
             {
+                SessionManager.SharedInstance.SetSelectedSession(selectedSession);
                 ShowSession(selectedSession);
             }
         }

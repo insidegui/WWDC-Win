@@ -96,7 +96,7 @@ namespace WWDC
 
         private string FavoriteKey(Session session)
         {
-            return session.year + "-" + session.id + "-favorite";
+            return session.uniqueIdentifier + "-favorite";
         }
 
         public void SetFavorite(Session session, bool favorite)
@@ -117,7 +117,7 @@ namespace WWDC
 
         private string PositionKey(Session session)
         {
-            return session.year + "-" + session.id + "-position";
+            return session.uniqueIdentifier + "-position";
         }
 
         public void SetPosition(Session session, double position)
@@ -138,7 +138,7 @@ namespace WWDC
 
         private string WatchedKey(Session session)
         {
-            return session.year + "-" + session.id + "-watched";
+            return session.uniqueIdentifier + "-watched";
         }
 
         public void SetWatched(Session session, bool watched)
@@ -155,6 +155,22 @@ namespace WWDC
             {
                 return (bool)watched;
             }
+        }
+
+        public void SetSelectedSession(Session session)
+        {
+            settings.Values["selected-session"] = session.uniqueIdentifier;
+        }
+
+        public Session GetSelectedSession()
+        {
+            var selectedId = settings.Values["selected-session"] as string;
+            if (selectedId == null) return null;
+
+            Predicate<Session> uniqueIdSearch = (Session s) => { return s.uniqueIdentifier == selectedId; };
+            var foundSession = sessions.FindLast(uniqueIdSearch);
+
+            return foundSession;
         }
 
     }
