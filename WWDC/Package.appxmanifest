@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="9872c0e9-27e7-4fec-9610-a1f9dfc66044" Publisher="CN=insid" Version="1.0.4.0" />
+  <Identity Name="56677GuilhermeRambo.WWDC" Publisher="CN=5F60F25D-985C-4B33-A76C-78E8C0E835F8" Version="1.1.0.0" />
   <mp:PhoneIdentity PhoneProductId="9872c0e9-27e7-4fec-9610-a1f9dfc66044" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>WWDC</DisplayName>
