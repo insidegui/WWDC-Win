@@ -1,2 +1,2 @@
-MainPackage=c:\users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\bin\x86\Release\WWDC_1.0.3.0_x86.appx
-SymbolPackage=c:\users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\AppPackages\WWDC_1.0.3.0_Test\WWDC_1.0.3.0_x86.appxsym
+MainPackage=C:\Users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\bin\x86\Release\WWDC_1.1.1.0_x86.appx
+SymbolPackage=C:\Users\insid\documents\visual studio 2015\Projects\WWDC\WWDC\AppPackages\WWDC_1.1.1.0_Test\WWDC_1.1.1.0_x86.appxsym
