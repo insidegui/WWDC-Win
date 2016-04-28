@@ -4,6 +4,8 @@ Don't like the WWDC website? Prefer native apps?
 
 Use this app to watch WWDC sessions on your PC or Windows Tablet.
 
+[⬇️ Download from the Windows App Store](https://www.microsoft.com/store/apps/wwdc/9nblggh4v9ss).
+
 ![screenshot](Screenshots/screenshot01.png)
 ![screenshot2](Screenshots/screenshot02.png)
 
